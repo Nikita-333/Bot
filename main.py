@@ -7,8 +7,8 @@ from check import *
 import time
 from apscheduler.schedulers.background import BackgroundScheduler
 
-bot = telebot.TeleBot('6030531451:AAE6XF7G7NfojWdlxCrGxC5qCIanvY7PRhI')
-authorized_chat_ids = [1184495885,691064668]  # 691064668, мой id
+bot = telebot.TeleBot('#')
+authorized_chat_ids = [#,#]  # List of user ID for all functionality to interact 
 
 def is_user_authorized(chat_id):
     return chat_id in authorized_chat_ids
