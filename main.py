@@ -109,7 +109,7 @@ def process_employee_name_add(message):
 def process_birth_date_add(message, new_employee_name):
     new_birth_date = message.text
     if is_user_authorized(message.chat.id):
-        db = DayBirth('DayBirth.db')  # Создаем экземпляр класса DayBirth
+        db = DayBirth('DayBirth.db') 
         formatted_date = db.add_employee_birth(new_employee_name, new_birth_date)
         if formatted_date:
             bot.send_message(message.chat.id, "Сотрудник успешно добавлен.")
