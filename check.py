@@ -139,9 +139,3 @@ class DayBirth(DayBirthDB):
 
 
 db = DayBirth('DayBirth.db')
-
-#db.remove_employee_birth("Руденко Елена Дмитриевна")
-#db.add_employee_birth("Николайчик Анна Эдуардовна","07/12/1989")
-#db.find_nearest_birthday()
-#db.print_nearest_employees()
-#db.close_connection()
